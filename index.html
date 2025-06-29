@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div class="container page">
+  <header class="header">
+    <h1 class="header__logo">
+      <a href="/" class="header__logo--link">LOGO</a>
+    </h1>
+    <nav aria-label="Main navigation" class="header__nav">
+      <ul class="nav-list">
+        <li class="nav-list__item nav-list__item--active">
+          <a href="#home" class="nav-list__link"> Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#about" class="nav-list__link"> About</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#portfolio" class="nav-list__link"> Portfolio</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#contact" class="nav-list__link"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!---->
+  <main class="card">
+    <section class="social">
+      <nav class="social__nav" aria-label="Social media link">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link" href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a></li>
+          <li class="social__item"><a class="social__link" href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a></li>
+          <li class="social__item"><a class="social__link" href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a></li>
+        </ul>
+      </nav>
+
+    </section>
+    <!---->
+    <section class="card__content">
+      <p class="card__greeting">Hello, it's me!</p>
+      <h2 class="card__name">Phoenix</h2>
+      <p class="card__role">I'm frontend developer</p>
+      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque, dolores eum
+        impedit ipsa nam officiis
+        quis
+        similique sit voluptate. Facilis iste molestias nesciunt vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque, dolores eum
+        impedit ipsa nam officiis
+        quis
+        similique sit voluptate. Facilis iste molestias nesciunt vitae.</p>
+      <div class="card__buttons">
+        <a href="#" class="button button--primary">Download CV</a>
+        <a href="#" class="button button--outline">Contact me</a>
+      </div>
+    </section>
+    <!---->
+    <section class="card__avatar">
+      <img src="./ava-2-short.png" alt="ava" class="card__avatar--img">
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2025 Phoenix</p>
+  </footer>
+</div>
+
+</body>
+</html>

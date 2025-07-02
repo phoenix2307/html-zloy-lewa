@@ -57,23 +57,26 @@ body {
     padding: 0 12px;
 }
 
-.button{
+.button {
     height: 44px;
     padding: 0 8px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    &.button--cta{
+
+    &.button--cta {
         background-color: var(--color-blue);
         border-radius: 44px;
-        .button__text{
+
+        .button__text {
             font-size: var(--font-p-16-size);
             font-weight: var(--font-p-16-weight);
             line-height: var(--font-p-16-line-height);
             color: var(--color-white);
             margin: 0 8px;
         }
-        .button__cta-icon{
+
+        .button__cta-icon {
             width: 32px;
             height: 32px;
             border-radius: 50%;
@@ -85,10 +88,24 @@ body {
     }
 }
 
+.section-heading{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .section-heading__dot{
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: var(--color-blue);
+    }
+    .section-heading__text{}
+}
+
 .header {
     height: 70px;
     display: flex;
     align-items: center;
+
     .header__container {
         display: flex;
         justify-content: space-between;
@@ -115,8 +132,9 @@ body {
             .navigation__list {
                 display: flex;
                 gap: 8px;
-                .nav-list__item{
-                    .navigation__link{
+
+                .nav-list__item {
+                    .navigation__link {
                         font-size: var(--font-p-16-size);
                         font-weight: var(--font-p-16-weight);
                         line-height: var(--font-p-16-line-height);
@@ -130,29 +148,101 @@ body {
     }
 }
 
-.hero{
+.hero {
     padding: 100px 0 64px;
     text-align: center;
-    .hero__content{
+
+    .hero__content {
         display: flex;
         flex-direction: column;
         gap: 32px;
         max-width: 640px;
         margin: 0 auto;
         align-items: center;
-        .hero__title{
+
+        .hero__title {
             font-size: var(--font-h1-size);
             font-weight: var(--font-h1-weight);
             line-height: var(--font-h1-line-height);
             color: var(--color-dark);
             text-wrap: balance;
         }
-        .hero__description{
+
+        .hero__description {
             font-size: var(--font-p-18-size);
             font-weight: var(--font-p-18-weight);
             line-height: var(--font-p-18-line-height);
             color: var(--color-dark);
             text-wrap: balance;
+        }
+    }
+}
+
+.services {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    .services__title {
+        font-size: var(--font-h2-size);
+        font-weight: var(--font-h2-weight);
+        line-height: var(--font-h2-line-height);
+        color: var(--color-dark);
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .services__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        .service-card {
+            background-color: var(--color-sky);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .service-card__top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .service-card__title {
+                    font-size: var(--font-h6-size);
+                    line-height: var(--font-h6-line-height);
+                    color: var(--color-dark);
+                }
+
+                .service-card__badge {
+                    height: 36px;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: var(--color-blue);
+                    color: var(--color-white);
+                }
+            }
+
+            .service-card__description {
+                font-size: var(--font-p-16-size);
+                line-height: var(--font-p-16-line-height);
+                color: var(--color-dark);
+            }
+
+            .service-card__img {
+                img {
+                    width: 100%;
+                    border-radius: 12px;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

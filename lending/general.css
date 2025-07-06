@@ -46,7 +46,21 @@
     --spacing-4xl: 68px;
     --spacing-5xl: 72px;
     --spacing-7xl: 100px;
+}
 
+html{
+    font-size: 16px; /*1rem*/
+}
+
+@media (max-width: 1024px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
 }
 
 body {

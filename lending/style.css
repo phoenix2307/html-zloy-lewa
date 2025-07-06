@@ -456,27 +456,26 @@ body {
                 max-height: 0; /* Початково схований */
                 overflow: hidden; /* Щоб контент не виходив за межі */
                 padding: 0 20px;
-                transition:
-                        opacity 0.3s ease-in-out,
-                        max-height 0.3s ease-in-out,
-                        padding-bottom 0.3s ease-in-out;
+                transition: opacity 0.3s ease-in-out,
+                max-height 0.5s ease-in-out,
+                padding-bottom 0.5s ease-in-out;
             }
 
-            .faq-item__toggle:checked ~ .faq-item__answer{
+            .faq-item__toggle:checked ~ .faq-item__answer {
                 /*display: block;*/
                 opacity: 1; /* Плавно з'являється */
                 max-height: 500px; /* Максимальна висота (можна змінити) */
                 padding-bottom: 20px; /* Додаємо відступ внизу */
             }
 
-            .faq-item__toggle:checked ~ .faq-item__question .faq-item__icon{
+            .faq-item__toggle:checked ~ .faq-item__question .faq-item__icon {
                 transform: rotate(135deg);
             }
         }
     }
 }
 
-.cta{
+.cta {
     padding: 32px 0;
     display: flex;
     flex-direction: column;
@@ -484,6 +483,7 @@ body {
     gap: 32px;
     background-color: var(--color-blue);
     border-radius: 32px;
+
     .cta__title {
         font-size: var(--font-h2-size);
         font-weight: var(--font-h2-weight);
@@ -493,6 +493,7 @@ body {
         text-wrap: balance;
         max-width: 64ch;
     }
+
     .cta__description {
         font-size: var(--font-p-18-size);
         font-weight: var(--font-p-18-weight);
@@ -503,15 +504,81 @@ body {
         max-width: 64ch;
     }
 
-    .button.button--cta{
+    .button.button--cta {
         background-color: var(--color-white);
         color: var(--color-dark);
-        .button__text{
+
+        .button__text {
             color: var(--color-dark);
         }
-        .button__cta-icon{
+
+        .button__cta-icon {
             background-color: var(--color-blue);
             color: var(--color-white);
+        }
+    }
+}
+
+.footer {
+    padding: 32px 0;
+    font-size: var(--font-p-16-size);
+
+    .footer__container {
+        border-top: 1px solid var(--color-light-grey);
+        padding-top: 24px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 24px;
+        .footer__col {
+            &.footer__col--brand {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: flex-start;
+                .footer__logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    .footer__logo--text {
+                        font-size: var(--font-h5-size);
+                        font-weight: var(--font-h5-weight);
+                    }
+
+                    .footer__logo--img {
+                        width: 32px;
+                    }
+                }
+
+                .footer__description {
+                }
+            }
+
+            .footer__heading {
+                font-size: var(--font-h6-size);
+                font-weight: var(--font-h6-weight);
+                margin-bottom: 16px;
+            }
+
+            .footer__list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .footer__link {
+                    color: var(--color-light-grey);
+                }
+            }
+
+        }
+    }
+
+    .no-course {
+        padding-top: 32px;
+        border-top: 1px solid var(--color-light-grey);
+        margin-top: 32px;
+        h3{
+            font-size: var(--font-h6-size);
+            color: var(--color-dark);
+            text-align: center;
         }
     }
 }
